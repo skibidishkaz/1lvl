@@ -52,6 +52,10 @@ else
                 request(abcdef)
                 break
             end
+if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Content.Title.Text == "GAME OVER" and game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Visible then
+            wait(5)
+            break
+        end
 
             wait(1)
         end
