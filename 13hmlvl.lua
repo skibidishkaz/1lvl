@@ -7,6 +7,7 @@ if game.PlaceId == 17720162456 then
     humanoid:MoveTo(Vector3.new(-425.4451599121094, 16.70022201538086, 2984.232421875))
     wait(2)
     local args = {
+    wait(15)
         [1] = workspace.Teleporters.Teleporter5,
         [2] = 13,
         [3] = "Hellmode",
