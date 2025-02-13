@@ -41,10 +41,6 @@ else
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
-if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Content.Title.Text == "GAME OVER" and game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Visible then
-            wait(5)
-            break
-        end
 
             -- Проверка на "VICTORY" теперь в цикле while
             if player.PlayerGui.GameGui.Info.Message.Text == "VICTORY" then
@@ -56,7 +52,13 @@ if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Content.Ti
                 request(abcdef)
                 break
             end
-
+if player.PlayerGui.GameGui.EndScreen.Content.Title.Text == "VICTORY" then
+break
+    end
+if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Content.Title.Text == "GAME OVER" and game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Visible then
+            wait(5)
+            break
+        end
             wait(1)
         end
     end)
