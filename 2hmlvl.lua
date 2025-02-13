@@ -127,6 +127,10 @@ else
                     end
                 end
             end
+if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Content.Title.Text == "GAME OVER" and game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Visible then
+            wait(5)
+            break
+        end
 
                         -- Проверка на "VICTORY" теперь в цикле while
                         if player.PlayerGui.GameGui.Info.Message.Text == "VICTORY" then
