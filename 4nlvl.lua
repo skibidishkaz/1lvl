@@ -35,7 +35,7 @@ else
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
 
-            if currentValue == 360 then
+            if currentValue == 340 then
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped3.Value,
                     [2] = CFrame.new(-10, 13, -132, -1, 0, -8, 0, 1, 0, 8, 0, -1)
