@@ -42,6 +42,13 @@ else
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
+            if currentValue == 400 then
+                local args = {
+                    [1] = game:GetService("Players").LocalPlayer.Equipped3.Value,
+                    [2] = CFrame.new(-10, 13, -132, -1, 0, -8, 0, 1, 0, 8, 0, -1)
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
+            end
 
             -- Проверка на "VICTORY" теперь в цикле while
             if player.PlayerGui.GameGui.Info.Message.Text == "VICTORY" then
