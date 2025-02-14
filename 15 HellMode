@@ -191,7 +191,8 @@ else
                 game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(args))
             end
 
-            if currentValue == 960 then
+            if currentValue > 880 and currentValue < 1000 then
+            local success = pcall(function()
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped4.Value,
                     [2] = CFrame.new(50, 10, -127)
@@ -205,6 +206,7 @@ else
                     [1] = workspace.Towers.AmplifyingSorcerer2
                 }
                 game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(args))
+                end)
             end
 
             if currentValue > 640 and currentValue < 915 then
