@@ -13,7 +13,7 @@ wait(15)
         [1] = workspace:WaitForChild("Teleporters"):WaitForChild("Teleporter2"),
         [2] = 1,
         [3] = "Normal", 
-        [4] = false
+        [4] = true
     }
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
 else
