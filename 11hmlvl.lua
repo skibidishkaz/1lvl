@@ -7,6 +7,13 @@ wait(15)
 while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible do
     player.Character.HumanoidRootPart.CFrame = CFrame.new(-408.0579833984375, 16.933761596679688, 2963.642578125)
     humanoid:MoveTo(Vector3.new(-425.4451599121094, 16.70022201538086, 2984.232421875))
+if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
+    local args = {
+        [1] = workspace.Teleporters.Teleporter5
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
+        end
     wait(5)
     end
     local args = {
