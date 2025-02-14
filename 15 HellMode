@@ -191,7 +191,7 @@ else
                 game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(args))
             end
 
-            if currentValue == 550 then
+            if currentValue == 960 then
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped4.Value,
                     [2] = CFrame.new(50, 10, -127)
@@ -201,8 +201,6 @@ else
                     [1] = workspace.Towers.AmplifyingSorcerer
                 }
                 game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(args))
-            end
-            if currentValue == 620 then
                 local args = {
                     [1] = workspace.Towers.AmplifyingSorcerer2
                 }
