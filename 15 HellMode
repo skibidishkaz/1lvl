@@ -207,7 +207,7 @@ else
                 game:GetService("ReplicatedStorage").Functions.UpgradeTower:InvokeServer(unpack(args))
             end
 
-            if currentValue > 720 and currentValue < 915 then
+            if currentValue > 640 and currentValue < 915 then
                 local success = pcall(function()
                 local args = {
                     [1] = workspace.Towers.KingOfCurses4
