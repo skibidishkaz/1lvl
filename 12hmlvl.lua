@@ -9,7 +9,7 @@ if game.PlaceId == 17720162456 then
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
 if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     local args = {
-        [1] = workspace.Teleporters.Teleporter5
+        [1] = workspace.Teleporters.Teleporter6
     }
     
     game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
@@ -17,7 +17,7 @@ if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
 wait(5)
     end
     local args = {
-        [1] = workspace.Teleporters.Teleporter5,
+        [1] = workspace.Teleporters.Teleporter6,
         [2] = 12,
         [3] = "Hellmode",
         [4] = false
