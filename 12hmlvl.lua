@@ -9,7 +9,7 @@ if game.PlaceId == 17720162456 then
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
 if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     local args = {
-        [1] = workspace.Teleporters.Teleporter6
+        [1] = workspace.Teleporters.Teleporter5
     }
     
     game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
