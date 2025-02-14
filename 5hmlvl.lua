@@ -13,7 +13,6 @@ if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     }
     
     game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
-    wait(3)
         end
     end
 local args = {
