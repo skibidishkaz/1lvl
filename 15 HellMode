@@ -169,14 +169,14 @@ else
              if player.PlayerGui.GameGui.Info.Message.Text == "VICTORY" then
                 game:GetService("ReplicatedStorage").Events.Replay:FireServer()
                 if game:GetService("Players").LocalPlayer.PlayerGui.GameGui.EndScreen.Rewards.DroppedTower.Visible == false then
-                    local url = "https://discord.com/api/webhooks/1337737827810803773/okBl7WCf6i6BfYRWjBFfQOmaGAaaHXxp2tj37Bj4yi9hx0kvP9AQ91hyw6Xti3tm4YWa"
+                    local url = "https://discord.com/api/webhooks/1340016275451150346/8D17e1lcb3KBlTyRMofVhBS4A6sVksqzp0XGSvqMuhUsLV9c7r_gKObxClnd5PnTuV6j"
                     local data = {["content"] = "15 Hellmode пройден за время: ".. game:GetService("Workspace").Info.Time.Timer.Value .. "\n Account: " .. character.Name}
                     local newdata = game:GetService("HttpService"):JSONEncode(data)
                     local headers = {["content-type"] = "application/json"}
                     local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
                     request(abcdef)
                 else
-                    local url = "https://discord.com/api/webhooks/1337737827810803773/okBl7WCf6i6BfYRWjBFfQOmaGAaaHXxp2tj37Bj4yi9hx0kvP9AQ91hyw6Xti3tm4YWa"
+                    local url = "https://discord.com/api/webhooks/1340016275451150346/8D17e1lcb3KBlTyRMofVhBS4A6sVksqzp0XGSvqMuhUsLV9c7r_gKObxClnd5PnTuV6j"
                     local data = {["content"] = "@everyone МЕГУМИ! 15 Hellmode пройден за время: ".. game:GetService("Workspace").Info.Time.Timer.Value .. "\n Account: " .. character.Name}
                     local newdata = game:GetService("HttpService"):JSONEncode(data)
                     local headers = {["content-type"] = "application/json"}
