@@ -10,7 +10,7 @@ if game.PlaceId == 17720162456 then
     wait(5)
     end
 local args = {
-    [1] = workspace.Teleporters.Teleporter1,
+    [1] = workspace.Teleporters.Teleporter2,
     [2] = 1,
     [3] = "Hellmode",
     [4] = true
