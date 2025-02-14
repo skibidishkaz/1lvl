@@ -9,6 +9,7 @@ if game.PlaceId == 17720162456 then
     humanoid:MoveTo(Vector3.new(-319.4451599121094, 16.70022201538086, 2987.232421875))
     wait(5)
     end
+print('зашел')
 local args = {
     [1] = workspace.Teleporters.Teleporter2,
     [2] = 1,
