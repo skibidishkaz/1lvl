@@ -10,7 +10,7 @@ wait(15)
         [1] = workspace.Teleporters.Teleporter5,
         [2] = 15,
         [3] = "Hellmode",
-        [4] = true
+        [4] = false
     }
     game:GetService("ReplicatedStorage").Remotes.Teleporters.ChooseStage:FireServer(unpack(args))
 else
