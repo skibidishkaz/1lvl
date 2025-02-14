@@ -6,7 +6,6 @@ if game.PlaceId == 17720162456 then
 wait(15)
     player.Character.HumanoidRootPart.CFrame = CFrame.new(-383, 17, 2942)
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
-    end
     local args = {
         [1] = workspace.Teleporters.Teleporter5,
         [2] = 15,
