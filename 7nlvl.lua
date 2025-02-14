@@ -4,14 +4,16 @@ local humanoid = character:WaitForChild("Humanoid")
 
 if game.PlaceId == 17720162456 then
 wait(15)
+      while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible do
       player.Character.HumanoidRootPart.CFrame = CFrame.new(-333.0579833984375, 16.933761596679688, 2945.642578125)
-    humanoid:MoveTo(Vector3.new(-351.4451599121094, 16.70022201538086, 2964.232421875))
-    wait(2)
+      humanoid:MoveTo(Vector3.new(-351.4451599121094, 16.70022201538086, 2964.232421875))
+      wait(5)
+      end
 local args = {
     [1] = workspace.Teleporters.Teleporter4,
     [2] = 7,
     [3] = "Normal",
-    [4] = false
+    [4] = true
 }
 
 game:GetService("ReplicatedStorage").Remotes.Teleporters.ChooseStage:FireServer(unpack(args))
