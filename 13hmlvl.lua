@@ -9,7 +9,7 @@ while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible d
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
 if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     local args = {
-        [1] = workspace.Teleporters.Teleporter5
+        [1] = workspace.Teleporters.Teleporter6
     }
     
     game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
@@ -18,7 +18,7 @@ wait(5)
     end
     local args = {
     wait(15)
-        [1] = workspace.Teleporters.Teleporter5,
+        [1] = workspace.Teleporters.Teleporter6,
         [2] = 13,
         [3] = "Hellmode",
         [4] = false
