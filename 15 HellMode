@@ -7,7 +7,7 @@ wait(15)
     player.Character.HumanoidRootPart.CFrame = CFrame.new(-383, 17, 2942)
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
     local args = {
-        [1] = workspace.Teleporters.Teleporter5,
+        [1] = workspace.Teleporters.Teleporter6,
         [2] = 15,
         [3] = "Hellmode",
         [4] = false
