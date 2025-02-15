@@ -4,7 +4,7 @@ local humanoid = character:WaitForChild("Humanoid")
 
 if game.PlaceId == 17720162456 then
     wait(15)
-while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible do
+  while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible do
     player.Character.HumanoidRootPart.CFrame = CFrame.new(-383, 17, 2942)
     humanoid:MoveTo(Vector3.new(-358, 17, 2920))
 if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
@@ -17,7 +17,6 @@ if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
 wait(5)
     end
     local args = {
-    wait(15)
         [1] = workspace.Teleporters.Teleporter6,
         [2] = 13,
         [3] = "Hellmode",
