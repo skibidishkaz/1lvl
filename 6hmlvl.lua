@@ -73,7 +73,7 @@ else
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
-            if currentValue >= 65 and currentValue <= 145 then 
+            if currentValue >= 65 and currentValue <= 130 then 
                 wait(1)
                 for _, tower in pairs(workspace.Towers:GetChildren()) do
                     if string.match(tower.name, "SorcererAgent%d*") then
@@ -87,7 +87,7 @@ else
                     end                         
                 end
             end
-            if currentValue == 155 or currentValue == 160 or currentValue == 165 then                 
+            if currentValue == 150 or currentValue == 165 or currentValue == 180 then                 
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped3.Value,
                     [2] = CFrame.new(113, 38, -126)
