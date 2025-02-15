@@ -17,7 +17,7 @@ if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     wait(5)
     end
     local args = {
-        [1] = workspace.Teleporters.Teleporter6,
+        [1] = workspace.Teleporters.Teleporter5,
         [2] = 11,
         [3] = "Hellmode",
         [4] = true
