@@ -13,6 +13,7 @@ if game.PlaceId == 17720162456 then
         [4] = true
     }
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
+    print("выбрал")
 else
     local success, err = pcall(function()
         local realTimer = game:GetService("Workspace").Info.Time.RealTimer
