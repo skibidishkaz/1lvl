@@ -8,7 +8,7 @@ wait(15)
     humanoid:MoveTo(Vector3.new(-319.4451599121094, 16.70022201538086, 2987.232421875))
     wait(5)
 local args = {
-    [1] = workspace.Teleporters.Teleporter2,
+    [1] = workspace.Teleporters.Teleporter1,
     [2] = 3,
     [3] = "Hellmode",
     [4] = true
