@@ -4,28 +4,17 @@ local humanoid = character:WaitForChild("Humanoid")
 
 if game.PlaceId == 17720162456 then
     wait(15)
-    while not game:GetService("Players").LocalPlayer.PlayerGui.Story.Frame.Visible do
     player.Character.HumanoidRootPart.CFrame = CFrame.new(-341.0579833984375, 16.933761596679688, 3006.642578125)
     humanoid:MoveTo(Vector3.new(-319.4451599121094, 16.70022201538086, 2987.232421875))
-    humanoid.MoveToFinished:Wait()
-if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
-    local args = {
-        [1] = workspace.Teleporters.Teleporter2
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.Teleporters.Leave:FireServer(unpack(args))
-        end
     wait(5)
-    end
-print('зашел')
-local args = {
-    [1] = workspace.Teleporters.Teleporter1,
-    [2] = 1,
-    [3] = "Hellmode",
-    [4] = true
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
+    local args = {
+        [1] = workspace:WaitForChild("Teleporters"):WaitForChild("Teleporter2"),
+        [2] = 1,
+        [3] = "Normal", 
+        [4] = true
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
+    print("выбрал")
 
 else
     local success, err = pcall(function()
