@@ -6,7 +6,7 @@ if game.PlaceId == 17720162456 then
 wait(15)
       player.Character.HumanoidRootPart.CFrame = CFrame.new(-333.0579833984375, 16.933761596679688, 2945.642578125)
     humanoid:MoveTo(Vector3.new(-351.4451599121094, 16.70022201538086, 2964.232421875))
-    wait(5)
+    wait(2)
 local args = {
     [1] = workspace.Teleporters.Teleporter4,
     [2] = 10,
@@ -15,7 +15,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
-
 else
     local success, err = pcall(function()
         local realTimer = game:GetService("Workspace").Info.Time.RealTimer
