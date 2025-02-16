@@ -127,7 +127,7 @@ else
                     end                         
                 end
             end   
-            if currentValue >= 320 and currentValue <= 370 then 
+            if currentValue >= 320 and currentValue <= 420 then 
                 wait(1)
                 for _, tower in pairs(workspace.Towers:GetChildren()) do
                     if string.match(tower.name, "KingOfCurses%d*") then
@@ -141,7 +141,7 @@ else
                     end
                 end
             end
-            if currentValue >= 373 and currentValue <= 430 then 
+            if currentValue >= 430 and currentValue <= 500 then 
                 wait(1)
                 for _, tower in pairs(workspace.Towers:GetChildren()) do
                     if string.match(tower.name, "AmplifyingSorcerer%d*") then
@@ -155,7 +155,7 @@ else
                     end
                 end
             end
-            if currentValue >= 440 and currentValue <= 700 then 
+            if currentValue >= 500 and currentValue <= 700 then 
                 wait(1)
                 for _, tower in pairs(workspace.Towers:GetChildren()) do
                     if string.match(tower.name, "KingOfCurses%d*") then
