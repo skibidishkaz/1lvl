@@ -81,7 +81,7 @@ else
             if currentValue == 150 or currentValue == 165 or currentValue == 180 then                 
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped3.Value,
-                    [2] = CFrame.new(113, 38, -126)
+                    [2] = CFrame.new(111, 37, -127)
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
@@ -102,14 +102,14 @@ else
             if currentValue == 215 or currentValue == 220 or currentValue == 225 or currentValue == 230 then
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped2.Value,
-                    [2] = CFrame.new(113, 38, -126)
+                    [2] = CFrame.new(111, 37, -127)
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end 
               if currentValue == 220 or currentValue == 225 or currentValue == 230 or currentValue == 235 then
             local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped4.Value,
-                    [2] = CFrame.new(113, 38, -126)
+                    [2] = CFrame.new(111, 37, -127)
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
             end
