@@ -19,7 +19,7 @@ if game:GetService("Players").LocalPlayer.PlayerGui.Story.TeleMenu.Visible then
     end
 print('зашел')
 local args = {
-    [1] = workspace.Teleporters.Teleporter2,
+    [1] = workspace.Teleporters.Teleporter1,
     [2] = 1,
     [3] = "Hellmode",
     [4] = true
