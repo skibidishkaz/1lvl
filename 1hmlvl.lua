@@ -11,7 +11,7 @@ if game.PlaceId == 17720162456 then
     local args = {
         [1] = workspace:WaitForChild("Teleporters"):WaitForChild("Teleporter2"),
         [2] = 1,
-        [3] = "Normal", 
+        [3] = "Hellmode", 
         [4] = true
     }
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Teleporters"):WaitForChild("ChooseStage"):FireServer(unpack(args))
