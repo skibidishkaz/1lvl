@@ -9,7 +9,7 @@ wait(15)
     humanoid.MoveToFinished:Wait()
     wait(5)
 local args = {
-    [1] = workspace.Teleporters.Teleporter2,
+    [1] = workspace.Teleporters.Teleporter1,
     [2] = 2,
     [3] = "Hellmode",
     [4] = true
