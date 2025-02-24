@@ -2,6 +2,17 @@ local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 local realTimer = game:GetService("Workspace").Info.Time.RealTimer
+local VirtualUser = game:GetService('VirtualUser')
+game:GetService('Players').LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Afk прохождение Годжо рейда запущено!",
+    Text = "Приятной игры! Права на скрипт принадлежат Mikufagoff",
+    Button1 = "Спасибо!",
+    Duration = 5
+})
 
 while true do
     local success, err = pcall(function()
