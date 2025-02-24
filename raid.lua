@@ -120,7 +120,7 @@ while true do
             local success, err = pcall(function()
                 local args = {
                     [1] = game:GetService("Players").LocalPlayer.Equipped4.Value,
-                    [2] = CFrame.new(50, 10, -127)
+                    [2] = CFrame.new(-34.878849029541016, 6.7719244956970215, -62.40098571777344)
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnNewTower"):InvokeServer(unpack(args))
 
