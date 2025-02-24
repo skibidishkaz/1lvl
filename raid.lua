@@ -8,7 +8,7 @@ while true do
         local currentValue = realTimer.Value
         print(currentValue)
         
-        if currentValue == 25 then
+        if currentValue == 30 then
             local success25, err25 = pcall(function()
                 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("AutoSkip"):FireServer()
             end)
