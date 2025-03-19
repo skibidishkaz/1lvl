@@ -16,9 +16,25 @@ wait(5)
     game:GetService("ReplicatedStorage").Remotes.Teleporters.ChooseStage:FireServer(unpack(args))
 else
     local realTimer = game:GetService("Workspace").Info.Time.RealTimer
+    local GuiService = game:GetService("GuiService")
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
 
+local player = Players.LocalPlayer
+
+local function onErrorMessageChanged(errorMessage)
+    if errorMessage and errorMessage ~= "" then
+        print("Error detected: " .. errorMessage)
+
+        if player then
+            wait(2)
+            TeleportService:Teleport(17720162456, player)
+        end
+    end
+end
     while true do
         local success, err = pcall(function()
+            GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged)
             local currentValue = realTimer.Value
             print(currentValue)
             if currentValue > 250 and currentValue < 300 then
